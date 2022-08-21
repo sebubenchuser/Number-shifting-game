@@ -123,10 +123,10 @@ void starting_board()
     printf("                        :Rules of This Game:\n");
     printf("                         ------------------\n\n\n");
     printf("1.You can move only 1 step at a time by arrow key:\n\n");
-    printf("       -> Move up: by 'u'/'U' key.\n");        //printf("       -> Move up: by up arrow key.\n");
-    printf("       -> Move Down: by 'd'/'D' key.\n");       //printf("       -> Move up: by down arrow key.\n");
-    printf("       -> Move left: by 'l'/'L' key.\n");     // printf("       -> Move left: by left arrow key.\n");
-    printf("       -> Move Right: by 'r'/'R' key.\n\n");        //printf("       -> Move Right: by Right arrow key.\n\n");
+    printf("       -> Move up: by up arrow key.\n");
+    printf("       -> Move up: by down arrow key.\n");
+    printf("       -> Move left: by left arrow key.\n");
+    printf("       -> Move Right: by Right arrow key.\n\n");
     printf("2. You can move number at empty position only.\n\n");
     printf("3.For each valid move: your total number of move will decreased by 1.\n\n");
     printf("4. Winning situation : Number in a 4*4 matrix should be in order from 1 to 15\n\n");
