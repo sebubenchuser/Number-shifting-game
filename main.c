@@ -18,8 +18,8 @@ char name[30];
 
 int main()
 {
-    int status=1,w=0,key;
-    char yes[1];
+    int status=1,w=0;
+    char yes[1],key;
    starting_board();
 
     while(move>1)
@@ -54,7 +54,7 @@ int main()
            scanf("%s",&yes);
            if(yes[0]=='y'||yes[0]=='Y')
            {
-              move=400;
+              move=4;
                break;
            }
            if(yes[0]=='n'||yes[0]=='N')
@@ -62,29 +62,36 @@ int main()
                break;
            }
        }
-       key=enter_key();
+       printf("Enter your key");
+       fflush(stdin);
+       //scanf("%c",&key);
+       key=EnteredKey();
        switch(key)
        {
-           case 1:
-           {
-              exit(0);
-           }
-           case 2:
+           case 101:
+           case 69:
+               {
+                   printf("\n................Thank you................\n");
+                   printf("           We will see next time              ");
+                   exit(0);
+               }
+
+           case 77:
            {
              right_shift();
              break;
            }
-           case 3:
+           case 75:
            {
              left_shift();
              break;
            }
-           case 4:
+           case 72:
            {
              up_shift();
              break;
            }
-           case 5:
+           case 80:
            {
              down_shift();
              break;
@@ -100,7 +107,14 @@ int main()
 
     }
 
+int EnteredKey()
+{
+        char c;
+            c = getch();
+            c=getch();
 
+    return c;
+}
 void starting_board()
 {
  int move=0;
